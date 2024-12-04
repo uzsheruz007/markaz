@@ -1,15 +1,16 @@
-# e-Learning Management System
+# Elektron ta'limni boshqarish tizimi
 
-A learning management and online assessment system for academic education.
 
-## Features
+Akademik ta'lim uchun ta'limni boshqarish va onlayn baholash tizimi.
 
-- Admin adds courses, teachers, and students and assigns them courses.
-- The teacher creates course content, announcements, assignments, quizzes, takes attendance, etc. A teacher can see the details and analysis of the assessments.
-- Students can enroll in the courses using the access key, see the course content of the enrolled courses, participate in assessments and see their results in detail.
-- Discussion section for both teacher and student.
 
-## Relational Schema
+## Xususiyatlari
+Admin kurslar, o'qituvchilar va talabalarni qo'shadi va ularga kurslar tayinlaydi.
+O'qituvchi kurs mazmunini, e'lonlarni, topshiriqlarni, viktorinalarni yaratadi, davomatni oladi va hokazo. O'qituvchi baholarning tafsilotlari va tahlilini ko'rishi mumkin.
+Talabalar kirish kaliti yordamida kurslarga yozilishlari, roʻyxatdan oʻtgan kurslarning kurs mazmunini koʻrishlari, baholashlarda qatnashishlari va ularning natijalarini batafsil koʻrishlari mumkin.
+O'qituvchi va talaba uchun muhokama bo'limi.
+
+## Aloqaviy sxema
 
 ![schema](https://user-images.githubusercontent.com/87283264/187967219-55bea00e-3151-488a-a4be-d2a95b9d8a5c.png)
 
@@ -32,21 +33,20 @@ A learning management and online assessment system for academic education.
 ![Screenshot (68)](https://user-images.githubusercontent.com/87283264/194387811-bd22cd8c-854c-4849-9aa9-0a71b53494a2.png)
 ![Screenshot (69)](https://user-images.githubusercontent.com/87283264/194387822-649bd890-cb57-47b5-b380-4e30499ae142.png)
 
-## Run Locally
-
-1. Clone the project
+## Ishga tushirish
+1. Loyihani klonlash
 
 ```bash
 git clone https://github.com/nz-m/eLMS-SWE.git
 ```
 
-2. Go to the project directory
+2. Loyiha katalogiga o'ting
 
 ```bash
 cd eLMS-SWE
 ```
 
-3. Create a virtual environment and activate it (Windows)
+3. Virtual muhit yarating va uni faollashtiring (Windows)
 
 ```bash
 python -m venv env
@@ -56,7 +56,8 @@ python -m venv env
 env\Scripts\activate
 ```
 
-4. Install dependencies
+4. Bog'liqlarni o'rnating
+
 
 ```bash
 pip install -r requirements.txt
@@ -68,7 +69,7 @@ pip install -r requirements.txt
 pip install -r requirements.txt --use-deprecated=legacy-resolver
 ```
 
-5. Make migrations and migrate
+5.Migratsiya qiling va ko'chiring
 
 ```bash
 python manage.py makemigrations
@@ -78,23 +79,21 @@ python manage.py makemigrations
 python manage.py migrate
 ```
 
-6. Create admin/superuser
+6. Administrator/superfoydalanuvchi yarating
 
 ```bash
 python manage.py createsuperuser
 ```
 
-7. Finally run the project
+7. Nihoyat loyihani ishga tushiring
 
 ```bash
 python manage.py runserver
 ```
 
-Now the project should be running on http://127.0.0.1:8000/
+Endi loyiha http://127.0.0.1:8000/ da ishlashi kerak.
 
-Login as admin and add some courses, teacher and students.
-
-Demo : https://youtu.be/NyL2ajUNxYk
+Admin sifatida tizimga kiring va ba'zi kurslar, o'qituvchi va talabalarni qo'shing.
 
 ## License
 
